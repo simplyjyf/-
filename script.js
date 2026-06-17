@@ -6,6 +6,24 @@ if (navToggle && siteNav) {
     const isOpen = siteNav.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
+
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      siteNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+document.querySelectorAll(".bottom-tabbar a").forEach((link) => {
+  if (link.dataset.page === currentPage) {
+    link.classList.add("active");
+  }
+});
+
+if (["experience.html", "blog.html", "projects.html"].includes(currentPage)) {
+  document.querySelector('.bottom-tabbar a[data-page="notes.html"]')?.classList.add("active");
 }
 
 const tabButtons = document.querySelectorAll(".tab-button");
