@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="理老师博客：初高中数理化学习方法、知识点拆解与备考建议。">
+  <meta name="description" content="理老师博客：初高中数理化学习方法、知识点拆解、错题复盘与备考建议。">
   <title>博客 | 理老师</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,9 @@
       </button>
       <nav class="site-nav" aria-label="主导航">
         <a href="index.html">首页</a>
+        <a href="notes.html">课堂笔记</a>
+        <a href="experience.html">教学经验</a>
+        <a href="community.html">评价论坛</a>
         <a class="active" href="blog.html">博客</a>
         <a href="projects.html">备课笔记</a>
         <a href="about.html">关于</a>
@@ -36,18 +39,19 @@
       <section class="page-hero">
         <p class="eyebrow">Study Lab</p>
         <h1>学习方法与知识拆解</h1>
-        <p>这里会沉淀课堂讲解、常见错因、题型方法和备考建议。示例文章用于展示未来博客的内容结构。</p>
+        <p>这里沉淀适合初高中学生的数理化学习方法：如何读题、如何整理错题、如何把知识点变成能用的解题工具。</p>
       </section>
 
-      <section class="article-grid">
+      <section class="article-grid expanded">
         <article id="article-1" class="article-card">
           <div class="article-meta">
             <span>数学</span>
             <time datetime="2026-06-17">2026.06.17</time>
           </div>
           <h2>函数题为什么总卡在第一步？</h2>
-          <p>很多函数题的难点不在计算，而在如何把题目条件翻译成图像、区间和变量关系。</p>
-          <a href="#article-1">阅读全文</a>
+          <p>很多函数题真正的难点不在计算，而在把题目条件翻译成图像、区间、单调性和变量关系。第一步可以先问三个问题：自变量在哪里取值？函数图像有什么限制？题目要比较的是值、点还是范围？</p>
+          <p>训练时不要急着刷难题，先把一次函数、二次函数、反比例函数和分段函数的“题目语言”整理出来，再做变式题，效果会更稳定。</p>
+          <a href="#article-1">数学方法笔记</a>
         </article>
         <article id="article-2" class="article-card">
           <div class="article-meta">
@@ -55,8 +59,9 @@
             <time datetime="2026-06-17">2026.06.17</time>
           </div>
           <h2>受力分析要先找对象，再找关系</h2>
-          <p>从研究对象开始，再判断接触、场力和运动状态，能显著降低漏力和多画力的概率。</p>
-          <a href="#article-2">阅读全文</a>
+          <p>物理题容易画错力，常常是因为没有先确定研究对象。做题时先圈出对象，再判断它与哪些物体接触、是否受到重力、电场力或摩擦力，最后结合运动状态判断合力方向。</p>
+          <p>如果学生总是漏力，可以先用“对象 - 接触 - 场力 - 状态”四栏表训练，比直接讲答案更能建立稳定习惯。</p>
+          <a href="#article-2">物理方法笔记</a>
         </article>
         <article id="article-3" class="article-card">
           <div class="article-meta">
@@ -64,16 +69,33 @@
             <time datetime="2026-06-17">2026.06.17</time>
           </div>
           <h2>方程式配平的稳定训练法</h2>
-          <p>配平不是靠感觉凑数字，而是先锁定元素变化，再用守恒关系逐步收束。</p>
-          <a href="#article-3">阅读全文</a>
+          <p>配平不是靠感觉凑数字，而是用守恒关系一步步收束。先找反应前后出现次数较少、结构较复杂的物质，再从变化明显的元素入手，最后检查氧、氢和电荷守恒。</p>
+          <p>初学阶段可以把每次配平写成“先配什么、为什么先配、最后检查什么”，比只写最终系数更有训练价值。</p>
+          <a href="#article-3">化学方法笔记</a>
         </article>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Future Topics</p>
+          <h2>后续可更新方向</h2>
+        </div>
+        <div class="tag-cloud">
+          <span>中考压轴题</span>
+          <span>高中函数专题</span>
+          <span>力学模型</span>
+          <span>电学实验</span>
+          <span>化学推断题</span>
+          <span>错题本整理</span>
+          <span>考前复盘</span>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div>
         <strong>理老师</strong>
-        <p>可替换为微信、邮箱或课程咨询入口。</p>
+        <p>博客内容可持续替换为真实课堂笔记、讲义节选和学习建议。</p>
       </div>
       <a href="projects.html">查看备课笔记</a>
     </footer>

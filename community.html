@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="理老师学生评价与学习论坛：学生反馈、家长留言、学习问题交流。">
+  <title>评价论坛 | 理老师</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="理老师首页">
+        <span class="brand-mark">理</span>
+        <span>
+          <strong>理老师</strong>
+          <small>数理化辅导</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="打开导航">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="notes.html">课堂笔记</a>
+        <a href="experience.html">教学经验</a>
+        <a class="active" href="community.html">评价论坛</a>
+        <a href="blog.html">博客</a>
+        <a href="projects.html">备课笔记</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Student Voice</p>
+        <h1>学生评价与学习论坛</h1>
+        <p>这里展示学生和家长常见反馈，也放一些学习问题交流示例。首版为静态展示，后续可接入真实留言系统。</p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Reviews</p>
+          <h2>学生与家长评价</h2>
+        </div>
+        <div class="review-grid">
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>以前函数题总是不知道第一步写什么，现在会先找图像和区间，做题没有那么慌了。</p>
+            <strong>初三学生 / 数学提升</strong>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>老师课后会把本节课重点和错因写清楚，家长能看懂孩子到底卡在哪里。</p>
+            <strong>高一家长 / 物理辅导</strong>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>化学方程式以前靠蒙，现在知道先看守恒和元素变化，错题少了很多。</p>
+            <strong>初三学生 / 化学巩固</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <p class="eyebrow">Forum</p>
+          <h2>学习问题论坛</h2>
+          <p class="muted">这里可以展示常见问题、学生打卡和课堂反馈。下面的留言框会在本页即时生成预览，适合演示互动感。</p>
+        </div>
+        <div class="forum-panel">
+          <div class="forum-post">
+            <span>数学讨论</span>
+            <strong>二次函数最值题，为什么端点也要代入？</strong>
+            <p>因为题目常常限制自变量范围，顶点不一定在区间内。</p>
+          </div>
+          <div class="forum-post">
+            <span>物理讨论</span>
+            <strong>摩擦力方向是不是一定和运动方向相反？</strong>
+            <p>不是，要看相对运动或相对运动趋势。</p>
+          </div>
+          <form class="forum-form" id="forum-form">
+            <label for="forum-input">留下一个学习问题</label>
+            <textarea id="forum-input" rows="4" placeholder="例如：孩子初三物理电路题总是不会分析，应该先补哪一块？"></textarea>
+            <button class="button primary" type="submit">生成留言预览</button>
+          </form>
+          <div class="forum-post generated" id="forum-preview" hidden>
+            <span>新留言预览</span>
+            <strong>你的问题已记录在本页预览中</strong>
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>理老师</strong>
+        <p>真实评价和论坛后续可替换为学生授权反馈或在线留言系统。</p>
+      </div>
+      <a href="about.html">联系咨询</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
