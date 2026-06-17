@@ -26,6 +26,7 @@
       </button>
       <nav class="site-nav" aria-label="主导航">
         <a class="active" href="index.html">首页</a>
+        <a href="classroom.html">沉浸课堂</a>
         <a href="notes.html">课堂笔记</a>
         <a href="experience.html">教学经验</a>
         <a href="community.html">评价论坛</a>
@@ -43,7 +44,7 @@
           <p class="hero-text">理老师面向初中、高中学生提供数学、物理、化学辅导。课程不追求堆题量，而是先定位知识断点，再通过例题拆解、变式训练和错题复盘，让学生逐步形成稳定的解题方法。</p>
           <div class="hero-actions">
             <a class="button primary" href="notes.html">在线查看课堂笔记</a>
-            <a class="button ghost" href="community.html">查看学生评价</a>
+            <a class="button ghost" href="classroom.html">进入沉浸课堂</a>
           </div>
         </div>
         <div class="hero-panel" aria-label="教学能力概览">
@@ -98,6 +99,66 @@
             <strong>函数图像与参数变化</strong>
             <p>从题目条件定位变量，再用图像变化判断答案范围。</p>
           </div>
+        </div>
+      </section>
+
+      <section class="section model-lab-section">
+        <div class="section-heading wide-heading">
+          <p class="eyebrow">Interactive Model Lab</p>
+          <h2>把数学和物理模型做成能看懂的动态画面</h2>
+          <p class="muted">首页加入可视化模型，让学生先产生兴趣，也让家长直观看到：抽象知识可以被拆成清楚、可理解、可复盘的过程。</p>
+        </div>
+        <div class="model-lab-grid">
+          <article class="model-card featured-model">
+            <div class="model-copy">
+              <span>数学动态模型</span>
+              <h3>二次函数参数变化</h3>
+              <p>通过抛物线的开口、顶点和对称轴变化，帮助学生理解“参数改变，图像怎么动”。</p>
+            </div>
+            <canvas id="parabola-model" class="model-canvas" width="680" height="360" aria-label="二次函数动态模型"></canvas>
+          </article>
+          <article class="model-card">
+            <div class="model-copy">
+              <span>数学动态模型</span>
+              <h3>正弦波与周期</h3>
+              <p>用移动波形展示振幅、周期与相位，适合三角函数和波动问题。</p>
+            </div>
+            <canvas id="wave-model" class="model-canvas" width="520" height="280" aria-label="正弦波动态模型"></canvas>
+          </article>
+          <article class="model-card">
+            <div class="model-copy">
+              <span>物理动态模型</span>
+              <h3>单摆运动</h3>
+              <p>把周期、摆长和重力加速度联系起来，让公式不再只是背诵。</p>
+            </div>
+            <canvas id="pendulum-model" class="model-canvas" width="520" height="280" aria-label="单摆动态模型"></canvas>
+          </article>
+          <article class="model-card wide-model">
+            <div class="model-copy">
+              <span>物理动态模型</span>
+              <h3>斜抛运动轨迹</h3>
+              <p>同时观察水平匀速和竖直变速，理解为什么运动可以分解成两个方向。</p>
+            </div>
+            <canvas id="projectile-model" class="model-canvas" width="680" height="320" aria-label="斜抛运动动态模型"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section real-class-section">
+        <div class="real-class-hero">
+          <div>
+            <p class="eyebrow">Classroom Record</p>
+            <h2>沉浸课堂：看见一节课如何发生</h2>
+            <p class="muted">用真实感图像展示课堂讲解、在线笔记和模型化教学场景，让家长更放心，也让学生更容易产生兴趣。</p>
+            <div class="hero-actions">
+              <a class="button primary" href="classroom.html">查看上课实录</a>
+              <a class="button ghost" href="community.html">查看评价反馈</a>
+            </div>
+          </div>
+          <a class="real-class-cover" href="classroom.html" aria-label="进入沉浸课堂页面">
+            <img src="assets/classroom-session.png" alt="沉浸课堂讲解场景">
+            <span>进入沉浸课堂</span>
+          </a>
         </div>
       </section>
 
